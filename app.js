@@ -1,7 +1,7 @@
 var http = require('http'),
 	fs = require('fs');
 
-var port = 9281;//端口号
+var port = 9282;//端口号
 
 /*
 	这是一个简单的服务器 
