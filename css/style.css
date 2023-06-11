@@ -1,12 +1,14 @@
-body {
+#gamePanel {
 	font-family: "微软雅黑", "monaco", monospace;
 	font-size: 14px;
+	position: relative;
 }
-li{
+#gamePanel *{box-sizing:initial;user-select: none;}
+#gamePanel li{
 	list-style:none;
 }
 *{margin:0; padding:0;}
-.title{
+#gamePanel .title{
 	text-align:center;
 	height:40px;
 	width:100%;
@@ -17,75 +19,90 @@ li{
 	position:absolute;
 	z-index:999;
 }
-#wrapper {
-	width: 740px;
+#gamePanel {
+	width: 1000px;
 	margin: 0 auto;
 	line-height: 20px;
-	padding-bottom: 20px;
+	display: flex;
+	padding: 20px 0;
 }
-h1 {
+#gamePanel .panel {
+	width: 740px;
+}
+#gamePanel .info {
+	padding-left: 16px;
+	margin-left: 16px;
+	border-left: 1px dashed #ccc;
+  flex-direction: column;
+	display: flex;
+	&>div {
+		padding: 4px 0;
+	}
+}
+#gamePanel h1 {
 	font-size: 40px;
 	line-height: 40px;
 	padding-bottom: 10px;
-	padding-top:60px;
+	/* padding-top:60px; */
 }
-#page {
+#gamePanel #page {
 	text-align: center;
 	padding-top: 40px;
 }
-#page span {
+#gamePanel #page span {
 	display: inline-block;
 	color: #fff;
 	background: #090;
 	padding: 4px 12px;
 }
-#page em{
+#gamePanel #page em{
 	display:block;
 	text-align:center;
 	margin-top:10px;
 	font-style:normal;
 }
-#desc {
+/* #gamePanel #desc {
 	padding-bottom: 60px;
-}
-#desc strong {
+} */
+#gamePanel #desc strong {
 	font-size: 120%;
 	padding: 0 4px;
 	color: #f00;
 }
 
-h1 {
+#gamePanel h1 {
 	color: #00c;
 }
-h3 {
+#gamePanel h3 {
 	color: #00c;
 	font-size: 20px;
 	line-height: 30px;
 }
-#page span {
+#gamePanel #page span {
 	background-color: #00c;
 }
 
-#balls {
+#gamePanel #balls {
 	border: solid 1px #999;
 	padding: 8px;
 	width: 720px;
 	height: 60px;
 	margin-bottom: 20px;
 }
-#balls ul {
+#gamePanel #balls ul {
 	padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-#balls ul li {
+#gamePanel #balls ul li {
 	width: 60px;
 	height: 60px;
 	float: left;
+	position: relative;
 }
-.ball {
+#gamePanel .ball {
 	/*border: solid 1px #000;*/
-	background: url(../images/ball.png) no-repeat 50% 50%;
+	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/ball.png) no-repeat 50% 50%;
 	/*width: 58px;
 	height: 58px;
 	border-radius: 30px;*/
@@ -93,83 +110,83 @@ h3 {
 	text-align: center;
 	cursor: move;
 }
-.ball span {
+#gamePanel .ball span {
 	background: #fff;
 	color: #000;
 	padding: 0 4px;
 }
 
-#libra {
+#gamePanel #libra {
 	position: relative;
 	width: 740px;
 	height: 420px;
-	background: url(../images/libra_1.png) no-repeat 50% 100%;
+	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/libra_1.png) no-repeat 50% 100%;
 }
-#libra .platform {
+#gamePanel #libra .platform {
 	width: 240px;
 	height: 230px;
 	/*border: dotted 2px #ccc;*/
 	/*padding: 6px;*/
 	top: 40px;
-	background: url(../images/platform.png) no-repeat 50% 100%;
+	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/platform.png) no-repeat 50% 100%;
 }
-#libra .platform-left {
+#gamePanel #libra .platform-left {
 	position: absolute;
 	left: 0;
 }
-#libra .platform-right {
+#gamePanel #libra .platform-right {
 	position: absolute;
 	right: 0;
 }
-#libra .platform-region {
+#gamePanel #libra .platform-region {
 	height: 160px;
 	border: dotted 2px #ccc;
 }
-#libra .platform-hover .platform-region {
+#gamePanel #libra .platform-hover .platform-region {
 	border-color: #f90;
 }
-#libra .blance {
+#gamePanel #libra .blance {
 	position: absolute;
-	background: url(../images/blance_1.png) no-repeat 50% -960px;
+	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png) no-repeat 50% -960px;
 	height: 120px;
 	width: 100%;
 	top: 190px;
 }
 
-.is-moving {
+#gamePanel .is-moving {
 	cursor: move;
 }
 
-#operation {
+#gamePanel #operation {
 	text-align: center;
 	padding: 20px 0;
 }
-#operation button {
+#gamePanel #operation button {
 	padding: 6px 12px;
 	font-size: 18px;
 	line-height: 24px;
 }
-#operation-record {
-	margin-top: 20px;
+#gamePanel #operation-record {
+	/* margin-top: 20px; */
 	display: none;
 }
-#operation-record ul {
+#gamePanel #operation-record ul {
 	border: dashed 1px #ccc;
 	padding: 4px 8px;
 	border-radius: 4px;
 }
-#result {
-	margin-top: 40px;
+#gamePanel #result {
+	/* margin-top: 40px; */
 	line-height: 24px;
 }
-#result p {
+/* #gamePanel #result p {
 	margin-bottom: 20px;
-}
-#result .btn {
+} */
+#gamePanel #result .btn {
 	text-align: center;
 }
-#result button {
-	padding: 6px 12px;
-	font-size: 18px;
-	line-height: 24px;
+#gamePanel #result button {
+	padding: 4px 16px;
+	font-size: 16px;
+	margin: 8px 0 0 0;
 }

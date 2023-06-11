@@ -1,55 +1,60 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>小球称重 | 酷鱼网</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="src/main.js"></script>
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<title>小球称重 | 酷鱼网</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./src/main.js"></script>
+</head>
 
 <body>
-	<div id="wrapper">
-		<h1>小球称重</h1>
-		<div id="desc">
-			下面共有 12 个小球，其中一个的质量与众不同，不知道它是偏轻还是偏重。<br />
-			请使用天秤找出这个小球，并指出它是偏轻还是偏重。<br />
-			最多只能称<strong>3</strong>次。
-		</div>
-		<div id="balls">
-			<ul></ul>
-		</div>
-		<div id="libra">
-			<div class="platform platform-left">
-				<div class="platform-region"></div>
+	<div id="gamePanel">
+		<div class="panel">
+			<div id="balls">
+				<ul></ul>
 			</div>
-			<div class="platform platform-right">
-				<div class="platform-region"></div>
+			<div id="libra">
+				<div class="platform platform-left">
+					<div class="platform-region"></div>
+				</div>
+				<div class="platform platform-right">
+					<div class="platform-region"></div>
+				</div>
+				<div class="blance"></div>
 			</div>
-			<div class="blance"></div>
+			<div id="operation">
+				<button id="do-weight">称一下(还有3次机会)</button>
+			</div>
 		</div>
-		<div id="operation">
-			<button id="do-weight">称一下(还有3次机会)</button>
-		</div>
-		<div id="operation-record">
-			<h3>称量记录：</h3>
-			<ul></ul>
-		</div>
-		<div id="result">
-			<h3>结论：</h3>
-			<p>
-				<select id="ball-idx"></select>
+		<div class="info">
+			<h1>小球称重</h1>
+			<div id="desc">
+				<h3>介绍：</h3>
+				下面共有 12 个小球，其中一个的质量与众不同，不知道它是偏轻还是偏重。请使用天秤找出这个小球，并指出它是偏轻还是偏重。最多只能称<strong>3</strong>次。
+			</div>
+			<div id="operation-record">
+				<h3>称量记录：</h3>
+				<ul></ul>
+			</div>
+			<div id="result">
+				<h3>结论：</h3>
+				<p>
+					<select id="ball-idx"></select>
 					号小球的质量的质量：
-				<input type="radio" id="ball-w-l-0" name="ball-w-l" value="0" />
-				<label for="ball-w-l-0">偏轻</label>
-				<input type="radio" id="ball-w-l-1" name="ball-w-l" value="1" />
-				<label for="ball-w-l-1">偏重</label>
-				。
-			</p>
-			<p class="btn">
-				<button id="btn-submit">提交</button>
-			</p>
+					<input type="radio" id="ball-w-l-0" name="ball-w-l" value="0" />
+					<label for="ball-w-l-0">偏轻</label>
+					<input type="radio" id="ball-w-l-1" name="ball-w-l" value="1" />
+					<label for="ball-w-l-1">偏重</label>
+					。
+				</p>
+				<p class="btn">
+					<button id="btn-submit">提交</button>
+				</p>
+			</div>
 		</div>
 	</div>
 </body>
+
 </html>
