@@ -159,7 +159,7 @@ function main() {
 						if (iFalg == 3) {
 							a = 2;
 						}
-						oLibra.children[2].style.backgroundImage = 'url("http://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png")';
+						oLibra.children[2].style.backgroundImage = 'url("https://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png")';
 						timer = setInterval(function () {
 							iNum--;
 							if (!iNum) {
@@ -185,7 +185,7 @@ function main() {
 						if (iFalg == 4) {
 							a = 2;
 						}
-						oLibra.children[2].style.backgroundImage = 'url("http://coolfishstudio.github.io/game-ball-weighing/images/blance_2.png")';
+						oLibra.children[2].style.backgroundImage = 'url("https://coolfishstudio.github.io/game-ball-weighing/images/blance_2.png")';
 						timer = setInterval(function () {
 							iNum--;
 							if (!iNum) {
@@ -217,7 +217,7 @@ function main() {
 						if (iFalg == 1) {
 							a = 2;
 						}
-						oLibra.children[2].style.backgroundImage = 'url("http://coolfishstudio.github.io/game-ball-weighing/images/blance_2.png")';
+						oLibra.children[2].style.backgroundImage = 'url("https://coolfishstudio.github.io/game-ball-weighing/images/blance_2.png")';
 						timer = setInterval(function () {
 							iNum--;
 							if (!iNum) {
@@ -243,7 +243,7 @@ function main() {
 						if (iFalg == 2) {
 							a = 2;
 						}
-						oLibra.children[2].style.backgroundImage = 'url("http://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png")';
+						oLibra.children[2].style.backgroundImage = 'url("https://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png")';
 						timer = setInterval(function () {
 							iNum--;
 							if (!iNum) {

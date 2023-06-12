@@ -102,7 +102,7 @@
 }
 #gamePanel .ball {
 	/*border: solid 1px #000;*/
-	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/ball.png) no-repeat 50% 50%;
+	background: url(https://coolfishstudio.github.io/game-ball-weighing/images/ball.png) no-repeat 50% 50%;
 	/*width: 58px;
 	height: 58px;
 	border-radius: 30px;*/
@@ -120,7 +120,7 @@
 	position: relative;
 	width: 740px;
 	height: 420px;
-	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/libra_1.png) no-repeat 50% 100%;
+	background: url(https://coolfishstudio.github.io/game-ball-weighing/images/libra_1.png) no-repeat 50% 100%;
 }
 #gamePanel #libra .platform {
 	width: 240px;
@@ -128,7 +128,7 @@
 	/*border: dotted 2px #ccc;*/
 	/*padding: 6px;*/
 	top: 40px;
-	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/platform.png) no-repeat 50% 100%;
+	background: url(https://coolfishstudio.github.io/game-ball-weighing/images/platform.png) no-repeat 50% 100%;
 }
 #gamePanel #libra .platform-left {
 	position: absolute;
@@ -147,7 +147,7 @@
 }
 #gamePanel #libra .blance {
 	position: absolute;
-	background: url(http://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png) no-repeat 50% -960px;
+	background: url(https://coolfishstudio.github.io/game-ball-weighing/images/blance_1.png) no-repeat 50% -960px;
 	height: 120px;
 	width: 100%;
 	top: 190px;
