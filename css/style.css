@@ -30,9 +30,9 @@
 	width: 740px;
 }
 #gamePanel .info {
-	padding-left: 16px;
-	margin-left: 16px;
-	border-left: 1px dashed #ccc;
+	padding-right: 16px;
+	margin-right: 16px;
+	border-right: 1px dashed #ccc;
   flex-direction: column;
 	display: flex;
 	&>div {
@@ -43,7 +43,7 @@
 	font-size: 40px;
 	line-height: 40px;
 	padding-bottom: 10px;
-	/* padding-top:60px; */
+	padding-top: 12px;
 }
 #gamePanel #page {
 	text-align: center;
